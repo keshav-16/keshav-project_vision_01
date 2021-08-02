@@ -9,10 +9,10 @@ namespace reverseword
             Console.WriteLine("Enter a sentence");
             string line = Console.ReadLine();
             string space = " ";
-            foreach (var i in line.Split(' '))
+            foreach (string i in line.Split(' '))
             {
                 string temp = " ";
-                foreach (var j in i.ToCharArray())
+                foreach (char j in i.ToCharArray())
                 {
                     temp = j + temp;
                 }
